@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 2 versions"
+                    ]
+                }
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        "syntax-dynamic-import",
+        "transform-class-properties",
+        "react-hot-loader/babel",
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "webpack_modules": "./webpack/webpack_modules"
+                }
+            }
+        ]
+    ]
+}

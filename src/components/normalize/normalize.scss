@@ -1,0 +1,240 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+[hidden] {
+    display: none; /* Add the correct display in IE */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0; /* Reset `padding` and `margin` of all elements */
+    margin: 0;
+    background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.2;
+    cursor: default;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; /* iOS 8+ */
+}
+
+hr {
+    overflow: visible; /* Show the overflow in Edge and IE */
+    height: 0;
+}
+
+nav ol,
+nav ul {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+small {
+    font-size: 83.3333%;
+}
+
+sub,
+sup {
+    font-size: 83.3333%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* # =================================================================
+   # Selection
+   # ================================================================= */
+
+/* Specify text selection background color and omit drop shadow */
+
+::-moz-selection {
+    background-color: #b3d4fc; /* Required when declaring ::selection */
+    color: #000;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #b3d4fc; /* Required when declaring ::selection */
+    color: #000;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+img {
+    border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
+}
+
+a {
+    background-color: transparent; /* Remove the gray background on active links in IE 10 */
+    -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+}
+
+/* Remove inner padding and border in Firefox 4+ */
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.54;
+    color: inherit;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* Correct the inability to style clickable types in iOS and Safari */
+    font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
+}
+
+:active,
+:hover,
+:focus {
+    outline-width: 0; /* Remove the outline when hovering in all browsers */
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* Remove the default button styling in all browsers */
+button,
+input,
+select,
+textarea {
+    font: inherit; /* Specify font inheritance of form elements */
+    font-size: 1em;
+    margin: 0;
+    color: inherit;
+    border-style: none;
+    background-color: transparent;
+}
+
+button,
+input {
+    overflow: visible;
+    border-radius: 0;
+}
+
+button,
+select {
+    text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+    -moz-appearance: none; /* Firefox 36+ */
+    -webkit-appearance: none; /* Chrome 41+ */
+}
+
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+
+textarea {
+    overflow: auto; /* Internet Explorer 11+ */
+    resize: vertical; /* Specify textarea resizability */
+}
+
+[type='checkbox'],
+[type='radio'] {
+    padding: 0;
+}
+
+[type="search"] {
+    outline-offset: -2px; /* Correct the outline style in Safari */
+    -webkit-appearance: textfield; /* Safari 8+ */
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; /* Safari 8 */
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+select::-ms-expand {
+    display: none; /* Internet Explorer 11+ */
+}
+
+select::-ms-value {
+    color: #000; /* Internet Explorer 11+ */
+}
+
+[type="number"] {
+    width: auto; /* Firefox 36+ */
+}
+
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+    cursor: default;
+}
+
+/* Apply cursor pointer to button elements */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+    cursor: pointer;
+}
+
+button {
+    overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* Correct the inability to style clickable types in iOS */
+}

@@ -1,0 +1,13 @@
+// 	@include clearfix;
+
+%clearfix {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+@mixin clearfix {
+    &::after {
+        @extend %clearfix;
+    }
+}

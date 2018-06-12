@@ -1,0 +1,35 @@
+/* our base color - body and typogaphry is generally the base colour */
+$clr-base: #1d1d1d;
+$clr-base-lt: #929eaa;
+
+/* primary brand color */
+$clr-primary: #f46f27;
+
+/* secondary brand color */
+$clr-secondary: #0f1b29;
+$clr-secondary-lt: #0d2338;
+
+/* neutrals */
+$clr-ntrl-min: #fff;
+$clr-ntrl-max: #000;
+
+/* base font size - applied at body / html level */
+$fs-base: 16px;
+
+/* larger than heading font sizes */
+$fs-giga: 80px;
+$fs-mega: 20px;
+$fs-kilo: 18px;
+
+/* heading font sizes */
+$fs-h1: 33px;
+$fs-title: 24px;
+$fs-h3: 28px;
+$fs-h4: 24px;
+$fs-h5: 20px;
+$fs-h6: 18px;
+
+/* smaller than heading font sizes */
+$fs-milli: 14px;
+$fs-micro: 12px;
+$fs-nano: 8px;

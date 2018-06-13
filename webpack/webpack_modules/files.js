@@ -10,7 +10,7 @@ export default () => ({
     plugins: [
         new CopyWebpackPlugin([
             {
-                from: resolve('src/uploads'),
+                from: resolve('src', 'uploads'),
                 to: 'uploads',
                 toType: 'dir'
             }

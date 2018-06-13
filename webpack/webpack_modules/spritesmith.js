@@ -9,12 +9,12 @@ export default () => ({
     plugins: [
         new SpritesmithPlugin({
             src: {
-                cwd: resolve(__dirname, 'src', 'components', 'spritesmith', 'icons'),
-                glob: '*.png'
+                cwd: resolve('src'),
+                glob: '**/*_sprite.png'
             },
             target: {
-                image: resolve(__dirname, 'src', 'components', 'spritesmith', 'sprite.png'),
-                css: resolve(__dirname, 'src', 'components', 'spritesmith', 'sprite.scss')
+                image: resolve('src', 'components', 'spritesmith', 'sprite.png'),
+                css: resolve('src', 'components', 'spritesmith', 'sprite.scss')
             },
             spritesmithOptions: {
                 padding: 10

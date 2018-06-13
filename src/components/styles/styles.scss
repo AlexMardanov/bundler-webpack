@@ -2,4 +2,18 @@
 
 h1 {
     text-align: center;
+
+    &::before {
+        content: '';
+        display: block;
+
+        @include sprite($font_sprite);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+
+        @include sprite($edit_sprite);
+    }
 }

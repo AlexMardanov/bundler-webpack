@@ -9,11 +9,44 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$spritesheet-width: 0px;
-$spritesheet-height: 0px;
+$attach-sprite-name: 'attach_sprite';
+$attach-sprite-x: 0px;
+$attach-sprite-y: 25px;
+$attach-sprite-offset-x: 0px;
+$attach-sprite-offset-y: -25px;
+$attach-sprite-width: 14px;
+$attach-sprite-height: 19px;
+$attach-sprite-total-width: 35px;
+$attach-sprite-total-height: 44px;
+$attach-sprite-image: 'sprite.png';
+$attach-sprite: (0px, 25px, 0px, -25px, 14px, 19px, 35px, 44px, 'sprite.png', 'attach_sprite', );
+$edit-sprite-name: 'edit_sprite';
+$edit-sprite-x: 30px;
+$edit-sprite-y: 0px;
+$edit-sprite-offset-x: -30px;
+$edit-sprite-offset-y: 0px;
+$edit-sprite-width: 5px;
+$edit-sprite-height: 8px;
+$edit-sprite-total-width: 35px;
+$edit-sprite-total-height: 44px;
+$edit-sprite-image: 'sprite.png';
+$edit-sprite: (30px, 0px, -30px, 0px, 5px, 8px, 35px, 44px, 'sprite.png', 'edit_sprite', );
+$font-sprite-name: 'font_sprite';
+$font-sprite-x: 0px;
+$font-sprite-y: 0px;
+$font-sprite-offset-x: 0px;
+$font-sprite-offset-y: 0px;
+$font-sprite-width: 20px;
+$font-sprite-height: 15px;
+$font-sprite-total-width: 35px;
+$font-sprite-total-height: 44px;
+$font-sprite-image: 'sprite.png';
+$font-sprite: (0px, 0px, 0px, 0px, 20px, 15px, 35px, 44px, 'sprite.png', 'font_sprite', );
+$spritesheet-width: 35px;
+$spritesheet-height: 44px;
 $spritesheet-image: 'sprite.png';
-$spritesheet-sprites: ();
-$spritesheet: (0px, 0px, 'sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($attach-sprite, $edit-sprite, $font-sprite, );
+$spritesheet: (35px, 44px, 'sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

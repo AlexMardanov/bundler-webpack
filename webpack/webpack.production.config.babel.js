@@ -5,7 +5,7 @@ import fonts from './webpack_modules/fonts'
 import files from './webpack_modules/files'
 import babel from './webpack_modules/babel'
 import sass from './webpack_modules/sass'
-import sprite from 'webpack_modules/spritesmith'
+import sprite from './webpack_modules/spritesmith'
 import images from './webpack_modules/images'
 import extractCss from './webpack_modules/extract-css'
 import templates from './webpack_modules/html'
@@ -13,7 +13,6 @@ import templates from './webpack_modules/html'
 export default () => merge([
     {
         mode: 'production',
-        context: resolve('./'),
         entry: {
             main: './src/main.js'
         },

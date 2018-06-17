@@ -1,5 +1,9 @@
+// Scripts
+import 'scripts/scripts'
+
 // Styles
 import 'styles/styles.scss'
 
-// Scripts
-import 'scripts/scripts'
+if (document.querySelector('#root')) {
+    import(/* webpackChunkName: 'react-styles' */ 'styles/styles.scss')
+}

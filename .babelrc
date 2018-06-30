@@ -9,22 +9,6 @@
                     ]
                 }
             }
-        ],
-        "react"
-    ],
-    "plugins": [
-        "syntax-dynamic-import",
-        "transform-class-properties",
-        "react-hot-loader/babel",
-        "transform-object-rest-spread",
-        [
-            "transform-runtime",
-            {
-                "helpers": false,
-                "polyfill": false,
-                "regenerator": true,
-                "moduleName": "babel-runtime"
-            }
         ]
     ]
 }

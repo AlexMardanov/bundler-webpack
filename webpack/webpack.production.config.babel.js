@@ -9,7 +9,6 @@ import sprite from './webpack_modules/spritesmith'
 import images from './webpack_modules/images'
 import extractCss from './webpack_modules/extract-css'
 import templates from './webpack_modules/html'
-import gzip from './webpack_modules/gzip'
 
 export default () => merge([
     {
@@ -61,6 +60,5 @@ export default () => merge([
     sprite(),
     images(),
     extractCss(),
-    templates(),
-    gzip()
+    templates()
 ])
